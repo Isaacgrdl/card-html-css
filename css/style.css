@@ -18,7 +18,7 @@ body { background: #f1f2f6;}
 
 a {text-decoration: none;}
 
-/* container flex */
+/* CARD */
 .flex {
     display: flex;
 }
@@ -45,9 +45,16 @@ a {text-decoration: none;}
     width: 2%;
     height: 140px;
     float: right;
-    background-color: #8cc152;
     border-radius: 5px;
     margin-right: -7px;
+}
+
+.container .card-info .status#off{
+    background-color: #f62459;
+}
+
+.container .card-info .status#on{
+    background-color: #8cc152;
 }
 
 .container .card-info i {
@@ -60,6 +67,24 @@ a {text-decoration: none;}
     color: #fff;
     text-align: center;
     float: left;
+}
+
+.container .card-info .cabecalho span {
+    border-radius: 50%;
+    margin-left: -14px;
+    margin-top: 40px;
+    border: 2px solid #fff;
+    height: 14px;
+    width: 14px;
+    float: left;
+}
+
+.container .card-info .cabecalho span#online {
+    background-color: #8cc152;
+}
+
+.container .card-info .cabecalho span#offline {
+    background-color: #ed5565;
 }
 
 .container .card-info .cabecalho label {
