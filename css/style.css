@@ -25,7 +25,7 @@ a {text-decoration: none;}
 
 .container {
     width: 100%;
-    padding: 10px;
+    padding: 10px 7px 10px 10px;
 }
 
 .container a {
@@ -34,6 +34,7 @@ a {text-decoration: none;}
     padding: 10px 7px 10px 10px;
     border-radius: 5px;
     box-shadow: 2px 2px 3px 0 rgba(0, 0, 0, 0.02);
+    margin-left: 5px;
 }
 
 .container .card-info {
@@ -46,6 +47,7 @@ a {text-decoration: none;}
     float: right;
     background-color: #8cc152;
     border-radius: 5px;
+    margin-right: -7px;
 }
 
 .container .card-info i {
@@ -60,15 +62,15 @@ a {text-decoration: none;}
     float: left;
 }
 
-.container .card-info label {
+.container .card-info .cabecalho label {
     font-size: 14px;
     font-weight: 700;
     color: #434a54;
     text-overflow: ellipsis;
-    display: block;
     float: left;
-    width: 80%;
+    width: 75%;
     cursor: pointer;
+    padding-left: 5px;
 }
 
 
@@ -80,7 +82,7 @@ a {text-decoration: none;}
 .container .card-info .op-info span label{
     width: 50%;
     float: left;
-    padding: 10px;
+    padding: 10px 0 0 10px;
     font-weight: normal;
     font-size: 10px;
     color: #656d78;
@@ -100,4 +102,46 @@ a {text-decoration: none;}
     font-size: 12px;
     color: #434a54;
     cursor: pointer;
+}
+
+.container .card-info .op-info3 span{
+    width: 98%;
+    float: left;
+}
+
+.container .card-info .op-info3 span label{
+    width: 32%;
+    float: left;
+    padding: 10px 0 0 10px;
+    font-weight: normal;
+    font-size: 10px;
+    color: #656d78;
+    cursor: pointer;
+}
+
+.container .card-info .op-info4 span{
+    width: 98%;
+    float: left;
+}
+
+.container .card-info .op-info4 span label{
+    width: 32%;
+    float: left;
+    padding-left: 10px;
+    font-weight: 700;
+    font-size: 12px;
+    color: #434a54;
+    cursor: pointer;
+}
+
+.container .card-info .op-info4 span #blue{
+    color: #4989db;
+}
+
+.container .card-info .op-info4 span #red{
+    color: #e9583f;
+}
+
+.container .card-info .op-info4 span #green{
+    color: #4ac2a4;
 }
