@@ -6,13 +6,14 @@
     <title>Document</title>
 
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style-modal.css">
     <link rel="stylesheet" href="src/fontawesome/css/all.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <section class="container flex">
-        <a href="#1">
+        <a href="#abrirModal">
             <div class="card-info">
                 <div class="card-info status" id="off"></div>
 
@@ -179,6 +180,63 @@
                 </div>
             </div>
         </a>
+    </section>
+
+    <section>
+        <div id="abrirModal" class="modal">
+            <div class="modal-container">
+                <a href="#fechar" title="Fechar" class="fechar"><i class="far fa-times-circle fa-lg"></i></a>
+
+                <div class="modal-cabecalho">
+                    <i class="fa fa-comments"></i>
+                    <label>Isaac Lopes</label>
+                    <span>isaac.lopes@email.com</span>
+                    <button class="btn-cabecalho"><i class="fas fa-history"></i>Histórico</button>
+                    <button class="btn-cabecalho"><i class="fas fa-bookmark"></i></i>Marcar como não lido</button>
+                    <button class="btn-cabecalho" id="finalizar">Finalizar</button>
+                </div>
+                <div class="cabecalho-actions">
+                    <div class="cabecalho-centro">
+                        <form>
+                            <label>Status de Organização</label>
+                            <label>Selecione um Responsável</label>
+                            <label>Transferir para o setor</label>
+                            <select>
+                                <option value="semstatus">Sem Status</option>
+                            </select>
+                            <select>
+                                <option>Sem Responsável</option>
+                            </select>
+                            <select>
+                                <option>TESTE</option>
+                            </select>
+                        </form>
+                        <div class="corpo-centro">
+                            <textarea class="chat" disabled rows="15">What is Lorem Ipsum? Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. Why do we use it? It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</textarea>
+                            <div class="rodape-centro">
+                                <i class="fas fa-paperclip fa-lg"></i>
+                                <i class="far fa-smile-beam fa-lg"></i>
+                                <textarea class="mensagem" placeholder="Digite sua mensagem"></textarea>
+                                <button class="btn-enviar">Enviar <i class="fas fa-paper-plane"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cabecalho-lateral">
+                        <div class="protocolo">
+                            <span>
+                                <strong>Protocolo:</strong> 1-341033804127
+                            </span>
+                        </div>
+                        <div class="informacoes">
+                            <h2>Informações</h2>
+
+                            <label>Observacoes</label>
+                            <textarea placeholder="Digite uma Observação"></textarea>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 </body>
 </html>

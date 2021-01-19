@@ -1,0 +1,238 @@
+/* MODAL */
+.modal {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: rgba(0,0,0,0.8);
+    z-index: 99999;
+    opacity:0;
+    pointer-events: none;
+  }
+
+.modal:target {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.modal-container {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    position: absolute;
+    margin: 10% 20%;
+    background: #fff;
+}
+
+/* MODAL CABECALHO */
+.modal-cabecalho {
+    width: 100%;
+    padding: 12px;
+}
+
+.modal-cabecalho i {
+    width: 55px;
+    height: 55px;
+    border-radius: 55px;
+    padding: 17px;
+    margin-top: -1;
+    background-color: #f62459;
+    color: #fff;
+    text-align: center;
+    float: left;
+}
+
+.modal-cabecalho label {
+    font-size: 14px;
+    font-weight: 700;
+    color: #434a54;
+    text-overflow: ellipsis;
+    float: left;
+    width: 92%;
+    margin-left: 5px;
+}
+
+.modal-cabecalho > span {
+    width: 45%;
+    font-size: 12px;
+    color: #434a54;
+    float: left;
+    display: block;
+    margin-top: 5px;
+    margin-left: 5px;
+}
+
+.btn-cabecalho {
+    font-size: 11px;
+    border-radius: 3px;
+    line-height: 35px;
+    font-weight: 700;
+    height: 35px;
+    margin: 0 3px;
+    color: #27597c;
+    padding: 0 15px 0 15px;
+    background-color: #e6e9ed;
+    cursor: pointer;
+    float: left;
+}
+
+.btn-cabecalho > i {
+    color: #27597c;
+    width: 11px;
+    height: 11px;
+    padding-left: 0px;
+    margin-top: -4px;
+    background-color: transparent;
+}
+
+.btn-cabecalho#finalizar {
+    width: 110px;
+    color: #fff;
+    background-color: #27597c;
+}
+
+.fechar {
+    position: absolute;
+    width: 30px;
+    right: -15px;
+    top: -20px;
+    text-align: center;
+    line-height: 30px;
+    margin-top: 5px;
+    background: #fff;
+    border-radius: 50%;
+    font-size: 16px;
+    color: #27597c;
+}
+
+/* CABECALHO ACTIONS */
+
+.cabecalho-actions {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    border-top: 1px solid #dcdcdc;
+}
+
+.cabecalho-actions label {
+    width: 30%;
+    float: left;
+    margin: 0 1%;
+    color: #434a54;
+    font-size: 11px;
+    font-weight: 700;
+}
+
+/* CABECALHO CENTRO */
+.cabecalho-centro {
+    display: flex;
+    flex-direction: column;
+    padding: 10px 10px 15px;
+    width: 80%;
+}
+
+.cabecalho-centro select {
+    width: 30%;
+    height: 30px;
+    margin: 0 1%;
+    background-color: #fff;
+    color: #656d78;
+    font-size: 12px;
+    float: left;
+    border: solid 1px #e6e9ed;
+    border-radius: 3px;
+}
+
+/* CORPO CENTRO */
+.corpo-centro {
+    position: relative;
+    margin-top: 15px;
+    width: 100%;
+}
+
+.chat {
+    width: 100%;
+    text-align: justify;
+    color: #000;
+    background-color: #b1c0cd;
+}
+
+.rodape-centro {
+    width: 100%;
+}
+
+.rodape-centro i {
+    width: 22px;
+    height: 22px;
+    margin: 0 30px 0 0;
+    cursor: pointer;
+    color: #b1c0cd;
+}
+
+.rodape-centro .mensagem {
+    width: 60%;
+    color: #434a54;
+    font-size: 13px;
+}
+
+.rodape-centro .btn-enviar i {
+    width: 13px;
+    height: 13px;
+    margin: 0;
+    color: #fff;
+}
+
+.rodape-centro .btn-enviar {
+    padding: 8px 24px;
+    border-radius: 2px;
+    color: #fff;
+    background-color: #27597c;
+    font-size: 13px;
+    cursor: pointer;
+}
+
+/* CABECALHO LATERAL*/
+.cabecalho-lateral {
+    width: 40%;
+    border-left: 1px solid #dcdcdc;
+}
+
+.protocolo {
+    width: 100%;
+    font-size: 12px;
+    padding: 10px 15px;
+    border-bottom: 1px solid #dcdcdc;
+}
+
+.protocolo strong {
+    font-weight: bold;
+}
+
+.informacoes {
+    padding:  20px 15px;
+}
+
+.informacoes label {
+    width: 100%;
+}
+
+.informacoes h2 {
+    margin-bottom: 10px;
+    font-weight: 400;
+    font-size: 14px;
+    color: #27597c;
+    text-align: left;
+}
+
+.informacoes textarea {
+    width: 100%;
+    height: 71px;
+    padding: 6px 12px;
+    margin-top: 5px;
+    color: #434a54;
+    font-size: 13px;
+    border-radius: 3px;
+    border: solid 1px #e6e9ed;
+}
